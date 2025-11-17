@@ -1,0 +1,1 @@
+[22-Jan-2025 03:51:49 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /var/www/html/storage/framework/views/f964613fb29ff5f8c24d78e78788d800ad158a62.php on line 6

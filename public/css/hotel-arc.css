@@ -1,0 +1,168 @@
+.table-hotel-arc thead tr th, .table-hotel-arc tfoot tr th {
+    text-align: center;
+}
+
+.table-hotel-arc tbody tr td:last-child {
+    text-align: right;
+}
+
+.table-primary {
+    background: #4e73df;
+    color: white;
+}
+
+.small-box {
+    border-radius: .25rem;
+    box-shadow: 0 0 1px rgba(0,0,0,.125),0 1px 3px rgba(0,0,0,.2);
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.small-box > .inner {
+    padding: 10px;
+}
+
+.small-box .icon {
+    color: rgba(0,0,0,.15);
+    z-index: 0;
+}
+
+.bg-info, .bg-info > a {
+    color: #fff !important;
+}
+
+.small-box .icon>i {
+    font-size: 3.5rem;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    transition: -webkit-transform .3s linear;
+    transition: transform .3s linear;
+    transition: transform .3s linear, -webkit-transform .3s linear;
+}
+
+.small-box > .small-box-footer {
+    background-color: rgba(0,0,0,.1);
+    color: rgba(255,255,255,.8);
+    display: block;
+    padding: 3px 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.border-top-hotel{
+    border-top: .25rem solid #042381;
+}
+
+.b-fieldset{
+
+}
+
+.modal-arc .modal-dialog .modal-content .modal-header {
+    padding: 0.4rem 1rem;
+    background-color: #D1E1FF;
+}
+
+.modal-arc .modal-dialog .modal-content .modal-footer {
+    padding: 0.4rem 1rem;
+    background-color: #D1E1FF;
+}
+
+.modal-arc .modal-dialog .modal-content .modal-header h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.table-arc thead tr th {
+    font-size: .8rem;
+}
+
+.table-arc tbody tr td {
+    font-size: .7rem;
+}
+
+.form-control-sm-arc {
+    height: calc(1.5em + .5rem + 2px);
+    padding: .15rem .3rem;
+    font-size: .7rem;
+    line-height: 1;
+    border-radius: .2rem;
+}
+
+.btn-cleaning {
+    background-color: #ADD8E6; /* Color de fondo */
+    border-color: #ADD8E6;     /* Color del borde */
+    color: #000;               /* Color del texto (negro para mejor contraste) */
+}
+
+.btn-cleaning:hover {
+    background-color: #9AC0CD; /* Color de fondo al hacer hover */
+    border-color: #9AC0CD;     /* Color del borde al hacer hover */
+}
+
+.modal-pdm h5 {
+    font-size: .85em;
+}
+
+.modal-pdm table > thead > tr  > th {
+    font-size: .75em;
+}
+
+.modal-pdm table > tbody > tr  > td {
+    font-size: .7em;
+}
+
+.modal-pdm .form-control-sm {
+    padding: 0.1rem .25rem;
+    height: calc(1.4em + .2rem + 1px);
+}
+
+.dropdown-menu {
+    min-width: 13rem;
+}
+
+.topbar.navbar-light .navbar-nav .nav-item .nav-link{
+    color: #516262 !important;
+}
+
+.topbar.navbar-light .navbar-nav .nav-item .nav-link:hover{
+    color: #000 !important;
+}
+
+.sidebar .nav-item .nav-link span{
+    font-size: .95rem   ;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    width: 20rem !important;
+  }
+
+  .sidebar .nav-item .nav-link{
+    width: 20rem;
+  }
+}
+
+.dropdown-menu {
+    border: 1px solid#516262;
+}
+
+.dropdown-item {
+    padding: 0.3rem 1rem;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: #C2D0E8;
+}
+
+.sidebar .nav-item .collapse .collapse-inner .collapse-item:hover, .sidebar .nav-item .collapsing .collapse-inner .collapse-item:hover{
+    background-color: #C2D0E8;
+}
+
+.sidebar-dark .nav-item .nav-link:active, .sidebar-dark .nav-item .nav-link:focus, .sidebar-dark .nav-item .nav-link:hover{
+    background-color: #5370AA;
+}

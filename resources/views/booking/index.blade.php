@@ -84,7 +84,14 @@
                                             <td>{{ $booking->getBookingStatusReservation()->created_at }}</td>
                                             <td>{{ ($booking->getBookingStatusReservation()->user)? $booking->getBookingStatusReservation()->user->name : '-' }}</td>
 
-                                            <td><a href="{{url('admin/booking/'.$booking->id.'/delete')}}" class="text-danger" onclick="return confirm('Are you sure you want to delete this data?')"><i class="fa fa-trash"></i></a></td>
+                                            <td>
+                                                <a class="btn btn-sm btn-link text-primary" href="{{ route('admin.booking.statusBooking', ['bookingId' => $booking->id]) }}">
+                                                    <i class="fas fa-eye"></i>
+                                                </a>
+                                                <a href="{{url('admin/booking/'.$booking->id.'/delete')}}" class="btn btn-sm btn-link text-danger" onclick="return confirm('Are you sure you want to delete this data?')">
+                                                    <i class="fa fa-trash"></i>
+                                                </a>
+                                            </td>
                                         </tr>
                                         @endforeach
                                     </tbody>

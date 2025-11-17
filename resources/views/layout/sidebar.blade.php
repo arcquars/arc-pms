@@ -11,19 +11,15 @@
 
     <!-- Divider -->
     <hr class="sidebar-divider my-0">
-
+    <div class="sidebar-heading">
+        OPERACIÓN DIARIA
+    </div>
     <!-- Nav Item - Dashboard -->
     <li class="nav-item">
         <a class="nav-link" href="{{url('admin')}}">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link" href="{{route('admin.cash-movements.home')}}">
-            <i class="fas fa-fw fa-cash-register"></i>
-            <span>Movimientos de caja</span></a>
-    </li>
-
     <li class="nav-item @if(request()->is('admin/booking')) active @endif">
         <a class="nav-link" href="{{url('admin/booking')}}">
             <i class="fas fa-hotel"></i>
@@ -37,34 +33,14 @@
         </a>
     </li>
 
+    <li class="nav-item">
+        <a class="nav-link" href="{{route('admin.cash-movements.home')}}">
+            <i class="fas fa-fw fa-cash-register"></i>
+            <span>Movimientos de caja</span></a>
+    </li>
+
     <!-- Divider -->
     <hr class="sidebar-divider">
-
-    <!-- Heading -->
-{{--    <div class="sidebar-heading">--}}
-{{--        Administración--}}
-{{--    </div>--}}
-
-{{--    <li class="nav-item">--}}
-{{--        <a class="nav-link @if(!request()->is('admin/banner*')) collapsed @endif" href="#" data-toggle="collapse" data-target="#bannerSection"--}}
-{{--           aria-expanded="true" aria-controls="collapseTwo">--}}
-{{--            <i class="fas fa-fw fa-images"></i>--}}
-{{--            <span>Banners Home</span>--}}
-{{--        </a>--}}
-{{--        <div id="bannerSection" class="collapse @if(request()->is('admin/banner*')) show @endif" aria-labelledby="headingTwo" data-parent="#accordionSidebar">--}}
-{{--            <div class="bg-white py-2 collapse-inner rounded">--}}
-{{--                <a class="collapse-item @if(request()->is('admin/banner/create')) active @endif" href="{{url('admin/banner/create')}}">Add New</a>--}}
-{{--                <a class="collapse-item @if(request()->is('admin/banner')) active @endif" href="{{url('admin/banner')}}">View All</a>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </li>--}}
-
-{{--    <li class="nav-item @if(request()->is('admin/testimonials')) active @endif">--}}
-{{--        <a class="nav-link " href="{{url('admin/testimonials')}}">--}}
-{{--            <i class="fas fa-hotel"></i>--}}
-{{--            <span>Testimonios de clientes</span></a>--}}
-{{--    </li>--}}
-
     <!-- Heading -->
     <div class="sidebar-heading">
         Configurar Habitaciones
@@ -114,44 +90,11 @@
         </div>
     </li>
 
+    <!-- Divider -->
+    <hr class="sidebar-divider">
     <!-- Heading -->
     <div class="sidebar-heading">
-        Recursos humanos
-    </div>
-    <!-- Department -->
-    <li class="nav-item @if(request()->is('admin/department*')) active @endif">
-        <a class="nav-link @if(!request()->is('admin/department*')) collapsed @endif" href="#" data-toggle="collapse" data-target="#DepartmentMaster"
-           aria-expanded="true" aria-controls="collapseTwo">
-            <i class="fas fa-fw fa-puzzle-piece"></i>
-            <span>{{ __('hotel-manager.departments') }}</span>
-        </a>
-        <div id="DepartmentMaster" class="collapse @if(request()->is('admin/department*')) show @endif" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item @if(request()->is('admin/department/create')) active @endif" href="{{url('admin/department/create')}}">{{ __('hotel-manager.add_new') }}</a>
-                <a class="collapse-item @if(request()->is('admin/department')) active @endif" href="{{url('admin/department')}}">{{ __('hotel-manager.view_all') }}</a>
-            </div>
-        </div>
-    </li>
-
-    <!-- Staff -->
-    <li class="nav-item @if(request()->is('admin/staff*')) active @endif">
-        <a class="nav-link @if(!request()->is('admin/staff*')) collapsed @endif" href="#" data-toggle="collapse" data-target="#StaffMaster"
-           aria-expanded="true" aria-controls="collapseTwo">
-            <i class="fas fa-fw fa-user-shield"></i>
-            <span>{{ __('hotel-manager.staff') }}</span>
-        </a>
-        <div id="StaffMaster" class="collapse @if(request()->is('admin/staff*')) show @endif" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item @if(request()->is('admin/staff/create')) active @endif" href="{{url('admin/staff/create')}}">{{ __('hotel-manager.add_new') }}</a>
-                <a class="collapse-item @if(request()->is('admin/staff')) active @endif" href="{{url('admin/staff')}}">{{ __('hotel-manager.view_all') }}</a>
-            </div>
-        </div>
-    </li>
-
-
-    <!-- Heading -->
-    <div class="sidebar-heading">
-        Punto de venta
+        Recursos humanos y Pos
     </div>
     <!-- ProductMaster -->
     <li class="nav-item @if(request()->is('admin/product*')) active @endif">
@@ -180,6 +123,35 @@
             <div class="bg-white py-2 collapse-inner rounded">
                 <a class="collapse-item @if(request()->is('admin/customer/create')) active @endif" href="{{url('admin/customer/create')}}">{{ __('hotel-manager.add_new') }}</a>
                 <a class="collapse-item @if(request()->is('admin/customer')) active @endif" href="{{url('admin/customer')}}">{{ __('hotel-manager.view_all') }}</a>
+            </div>
+        </div>
+    </li>
+    <!-- Department -->
+    <li class="nav-item @if(request()->is('admin/department*')) active @endif">
+        <a class="nav-link @if(!request()->is('admin/department*')) collapsed @endif" href="#" data-toggle="collapse" data-target="#DepartmentMaster"
+           aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-puzzle-piece"></i>
+            <span>{{ __('hotel-manager.departments') }}</span>
+        </a>
+        <div id="DepartmentMaster" class="collapse @if(request()->is('admin/department*')) show @endif" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item @if(request()->is('admin/department/create')) active @endif" href="{{url('admin/department/create')}}">{{ __('hotel-manager.add_new') }}</a>
+                <a class="collapse-item @if(request()->is('admin/department')) active @endif" href="{{url('admin/department')}}">{{ __('hotel-manager.view_all') }}</a>
+            </div>
+        </div>
+    </li>
+
+    <!-- Staff -->
+    <li class="nav-item @if(request()->is('admin/staff*')) active @endif">
+        <a class="nav-link @if(!request()->is('admin/staff*')) collapsed @endif" href="#" data-toggle="collapse" data-target="#StaffMaster"
+           aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-user-shield"></i>
+            <span>{{ __('hotel-manager.staff') }}</span>
+        </a>
+        <div id="StaffMaster" class="collapse @if(request()->is('admin/staff*')) show @endif" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item @if(request()->is('admin/staff/create')) active @endif" href="{{url('admin/staff/create')}}">{{ __('hotel-manager.add_new') }}</a>
+                <a class="collapse-item @if(request()->is('admin/staff')) active @endif" href="{{url('admin/staff')}}">{{ __('hotel-manager.view_all') }}</a>
             </div>
         </div>
     </li>
